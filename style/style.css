@@ -1,0 +1,218 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+* {
+  font-family: "Ubuntu", sans-serif;
+}
+
+.main {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+.backgrd {
+  height: 100vh;
+  width: 100%;
+  padding: 0 !important;
+  margin: 0 !important;
+  background-image: url("../assets/images/3132.jpg");
+  background-size: 100%;
+}
+.main_div {
+  position: absolute;
+  width: 600px;
+  height: 250px;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* background-color: #ffa500; */
+}
+.social_icons {
+  position: absolute;
+  bottom: 10%;
+  left: 40%;
+  transform: translate((-50%, -50%));
+}
+.social_icons i {
+  font-size: 35px;
+  color: #747474;
+  padding-left: 20px;
+  transition: all 0.2s ease-in-out;
+}
+.linkedin:hover >i {
+  color: #0a66c2;
+}
+.github:hover >i {
+    color: #18191a;
+  }
+
+.main_name {
+  position: absolute;
+  color: #252525;
+  text-align: center;
+  font-size: 60px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  user-select: none;
+
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: 0.15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: 0.15em; /* Adjust as needed */
+  animation: typing 3.5s steps(20, end), blink-caret 0.75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 40%;
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: orange;
+  }
+}
+.new {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.about {
+  background-color: rgb(20, 20, 20);
+  color: #fff;
+  width: 100%;
+  padding: 0 !important;
+  margin: 0 !important;
+  height: 60vh;
+}
+.about_me_haed {
+  margin-top: 80px;
+}
+.work_me_haed {
+  margin-top: 80px;
+}
+.ehead_1 {
+  border-bottom: 2px solid rgb(185, 82, 14);
+  width: 42%;
+}
+.work_1 {
+  border-bottom: 2px solid rgb(185, 82, 14);
+  width: 25%;
+  margin-top: 50px;
+}
+
+.about_me {
+  margin-top: 60px;
+}
+.about_head {
+  font-weight: bold;
+  color: #ffffff;
+}
+.about_p1 {
+  color: #cec8c8;
+}
+.Interests {
+  color: #fff;
+  font-weight: bold;
+}
+.intrest_t1 {
+  color: #adabab;
+}
+.education {
+  color: #0e0d0d;
+}
+.education_t1 {
+  font-style: italic;
+  color: rgb(31, 30, 30);
+}
+.icon_1 {
+  font-weight: bold;
+  color: black;
+  font-size: 20px;
+}
+.dev_1 {
+  color: #555555;
+}
+.projrct_1 {
+  color: rgb(25, 138, 190);
+}
+.skillhead_1 {
+  border-bottom: 2px solid rgb(185, 82, 14);
+  width: 30%;
+}
+.p_tag1 {
+  border-bottom: 8px solid rgb(185, 82, 14);
+  width: 70%;
+}
+.p_tag1_1 {
+  border-bottom: 8px solid rgb(185, 82, 14);
+  width: 60%;
+}
+.p_tag2 {
+  border-bottom: 8px solid rgb(185, 82, 14);
+  width: 70%;
+}
+.p_tag3 {
+  border-bottom: 8px solid rgb(185, 82, 14);
+  width: 70%;
+}
+.p_tag4 {
+  border-bottom: 8px solid rgb(185, 82, 14);
+  width: 65%;
+}
+.p_tag5 {
+  border-bottom: 8px solid rgb(185, 82, 14);
+  width: 60%;
+}
+.p_tag6 {
+  border-bottom: 8px solid rgb(185, 82, 14);
+  width: 40%;
+}
+.p_tag7 {
+  border-bottom: 8px solid rgb(185, 82, 14);
+  width: 20%;
+}
+.get_head {
+  margin-top: 50px;
+}
+
+.form_1 input {
+  width: 300px;
+}
+.form_1 textarea 
+{
+    width: 300px;
+}
+.btn_send
+{
+background-color: #0a66c2;
+color: #cec8c8;
+}
+.btn_send:hover
+{
+background-color: #ffffff;
+color: #0e0d0d;
+}
+
+.down_cursor {
+  position: absolute;
+  border: none;
+  font-weight: 600;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.down_cursor:hover {
+  background-color: transparent;
+  color: #ffa500;
+}
