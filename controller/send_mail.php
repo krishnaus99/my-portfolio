@@ -1,9 +1,9 @@
 <?php
 
-use PHPmailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
-require 'vendor/autoload.php';
+require '../vendor/autoload.php';
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $name = htmlspecialchars($_POST['name']);
@@ -18,7 +18,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $mail->Host = 'smtp.gmail.com';
         $mail->SMTPAuth = true;
         $mail->Username = 'krishnaus2499@gmail.com';
-        $mail->Password = 'Krishna@241999';
+        $mail->Password = 'wosj gidg fvmd hxqg';
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
         $mail->Port = 465;
 
@@ -29,10 +29,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $mail->Subject = 'New Submission Recived';
 
         $mail->Body = "Name: $name<br>Email: $email<br>Message: $message";
-        $mail->AltBody = "Name: $name\nEmail: $email\nMessage: $message";
+        $mail->AltBody = "Name: $name\Email: $email\nMessage: $message";
         $mail->send();
+        header('Location: ../index.html');
         echo 'Message has been sent';
     } catch (Exception $e) {
         echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
     }
 }
+
+
+?>

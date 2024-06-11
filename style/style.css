@@ -37,12 +37,12 @@
   padding-left: 20px;
   transition: all 0.2s ease-in-out;
 }
-.linkedin:hover >i {
+.linkedin:hover > i {
   color: #0a66c2;
 }
-.github:hover >i {
-    color: #18191a;
-  }
+.github:hover > i {
+  color: #18191a;
+}
 
 .main_name {
   position: absolute;
@@ -93,7 +93,7 @@
   width: 100%;
   padding: 0 !important;
   margin: 0 !important;
-  height: 60vh;
+  height: 80vh;
 }
 .about_me_haed {
   margin-top: 80px;
@@ -185,23 +185,57 @@
 .get_head {
   margin-top: 50px;
 }
-
-.form_1 input {
-  width: 300px;
+.main_form {
+  height: 700px;
 }
-.form_1 textarea 
+.form_1 {
+  padding-top: 10%;
+  padding-left: 5%;
+  height: 420px;
+  width: 400px;
+  border: 2px solid #4f4f4f;
+  border-radius: 20px;
+  background-color: #323232;
+}
+.form_1 input {
+  width: 360px;
+  background-color: #424141;
+  height: 35px;
+  border-radius: 10px;
+}
+.form_1 textarea {
+  width: 360px;
+  height: 100px;
+  background-color: #424141;
+  border-radius: 10px;
+}
+
+.form_1 label {
+  padding-left: 3%;
+}
+.for_mail {
+  padding-top: 10px;
+}
+.for_messge {
+  padding-top: 10px;
+}
+/* .form_1 textarea 
 {
     width: 300px;
+} * */
+.btn_send {
+  background-color: rgb(185, 82, 14);
+  color: #cec8c8;
+  width: 100px;
+  position: absolute;
+  right: 50px;
+  top: 450px;
 }
-.btn_send
-{
-background-color: #0a66c2;
-color: #cec8c8;
-}
-.btn_send:hover
-{
-background-color: #ffffff;
-color: #0e0d0d;
+
+.btn_send:hover {
+  background-color: #ffffff;
+  border: 3px solid rgb(185, 82, 14);
+  color: rgb(185, 82, 14);
 }
 
 .down_cursor {
@@ -215,4 +249,16 @@ color: #0e0d0d;
 .down_cursor:hover {
   background-color: transparent;
   color: #ffa500;
+}
+
+.footer_para {
+  padding-top: 20%;
+  color: #6d6a6a;
+}
+.a_mail {
+  color: #6d6a6a;
+}
+.tag a {
+  text-decoration: none;
+  text-underline-offset: none;
 }

@@ -125,7 +125,6 @@
       </div>
 
       <div class="education">
-        ]
         <div class="container">
           <div class="row">
             <div class="col-md-2"></div>
@@ -247,7 +246,6 @@
       </div>
 
       <div class="education">
-        ]
         <div class="container">
           <div class="row">
             <div class="col-md-2"></div>
@@ -280,7 +278,7 @@
         <div class="container">
           <div class="row">
             <div class="col-md-2"></div>
-            <div class="col-md-3 col-sm-12">
+            <div class="col-md-4 col-sm-12 position-relative main_form">
               <h2 class="get_head">
                 <span class="icon_get"
                   ><svg
@@ -300,56 +298,110 @@
                 ><span> Get in touch</span>
               </h2>
 
-              <form action="send_mail.php" method="POST" class="form_1">
-                <div>
-                  <input type="text" name="name" id="name" />
+              <form
+                action="./controller/send_mail.php"
+                method="POST"
+                class="form_1"
+              >
+                <div class="form_div">
+                  <div>
+                    <label for="input_name">Name</label>
+                    <input
+                      type="text"
+                      class="in1"
+                      name="name"
+                      id="input_name"
+                    />
+                  </div>
                 </div>
-                <br />
-                <div>
-                  <input type="mail" name="mail" id="mail" />
+                <div class="for_mail">
+                  <label for="input_email">Email*</label>
+                  <input
+                    type="email"
+                    class="in2"
+                    name="email"
+                    id="input_email"
+                    required
+                  />
                 </div>
-                <br />
-                <div>
-                  <textarea name="" id=""></textarea>
+                <div class="for_messge">
+                  <label for="input_message">Message</label>
+                  <textarea name="message" id="input_message"></textarea>
                 </div>
-                <br />
                 <div>
-                  <button type="submit" class="btn btn-outline-dark btn_send">
-                    Send Message
-                  </button>
+                  <button type="submit" class="btn btn_send">SEND</button>
                 </div>
               </form>
             </div>
             <div class="col-md-5 mx-auto about_me">
-              <h5 class="about_head">About me</h5>
-
-              <p>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  fill="currentColor"
-                  class="bi bi-stars"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    d="M7.657 6.247c.11-.33.576-.33.686 0l.645 1.937a2.89 2.89 0 0 0 1.829 1.828l1.936.645c.33.11.33.576 0 .686l-1.937.645a2.89 2.89 0 0 0-1.828 1.829l-.645 1.936a.361.361 0 0 1-.686 0l-.645-1.937a2.89 2.89 0 0 0-1.828-1.828l-1.937-.645a.361.361 0 0 1 0-.686l1.937-.645a2.89 2.89 0 0 0 1.828-1.828zM3.794 1.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387A1.73 1.73 0 0 0 4.593 5.69l-.387 1.162a.217.217 0 0 1-.412 0L3.407 5.69A1.73 1.73 0 0 0 2.31 4.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387A1.73 1.73 0 0 0 3.407 2.31zM10.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.16 1.16 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.16 1.16 0 0 0-.732-.732L9.1 2.137a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732z"
-                  />
-                </svg>
-                <span class="Interests">Interests:</span>
-                <span class="intrest_t1">Crafting</span>
+              <h5 class="about_head"></h5>
+              <p class="footer_para">
+                Here is a good spot for a message to your readers to let them
+                know how best to reach out to you.
               </p>
+              <div class="row">
+                <div class="col-md-1 col-sm-12">
+                  <i class="bi bi-envelope"></i>
+                </div>
+                <div class="col-md-2 col-sm-12">
+                  <!-- <link href="mailto:krishnaus2499@gmail.com" class="a_mail">
+                    krishnaus2499@gmail.com
+                </link> -->
+                  <p class="tag">
+                    <a
+                      href="mailto:krishnaus2499@gmail.com"
+                      class="a_mail"
+                      target="_blank"
+                      >krishnaus2499@gmail.com</a
+                    >
+                  </p>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-1 col-sm-12">
+                  <i class="bi bi-github"></i>
+                </div>
+                <div class="col-md-2 col-sm-12">
+                  <!-- <link href="mailto:krishnaus2499@gmail.com" class="a_mail">
+                    krishnaus2499@gmail.com
+                </link> -->
+                  <p class="tag">
+                    <a
+                      href="https://github.com/krishnaus99"
+                      class="a_mail"
+                      style="white-space: nowrap"
+                      target="_blank"
+                      >krishna U S</a
+                    >
+                  </p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-1 col-sm-12">
+                  <i class="bi bi-linkedin"></i>
+                </div>
+                <div class="col-md-2 col-sm-12">
+                  <!-- <link href="mailto:krishnaus2499@gmail.com" class="a_mail">
+                    krishnaus2499@gmail.com
+                </link> -->
+                  <p class="tag">
+                    <a
+                      href="https://www.linkedin.com/in/krishna-us-aa0bb2223?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_appc"
+                      class="a_mail"
+                      style="white-space: nowrap"
+                      target="_blank"
+                      >krishna U S</a
+                    >
+                  </p>
+                </div>
+              </div>
             </div>
+
             <div class="col-md-2"></div>
           </div>
         </div>
       </div>
-
-      <!-- <a class="rounded-full bg-neutral-100 p-1 ring-white ring-offset-2 ring-offset-gray-700/80 focus:outline-none focus:ring-2 sm:p-2"
-            href="/#DEMO"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
-                stroke="currentColor" aria-hidden="true" class="h-6 w-6 bg-transparent sm:h-8 sm:w-8">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M5 15l7-7 7 7"></path>
-            </svg></a> -->
     </div>
   </body>
 </html>
